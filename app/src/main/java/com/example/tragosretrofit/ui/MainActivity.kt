@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.tragosretrofit.data.model.DrinkModel
 import com.example.tragosretrofit.databinding.ActivityMainBinding
 import com.example.tragosretrofit.ui.recyclerView.DrinkAdapter
 import com.example.tragosretrofit.ui.viewModel.DrinkViewModel
@@ -23,15 +24,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initRecycler()
+
         drinkViewModel.callUseCase()
 
-        drinkViewModel.drinkModel.observe(this, Observer { binding.rvDrinks  })
+        drinkViewModel.drinkLiveData.observe(this, Observer {
+            initRecycler(it)
+        })
 
 
     }
-    private fun initRecycler(){
-       binding.rvDrinks.layoutManager = LinearLayoutManager(this)
+    private fun initRecycler(drinks: List<DrinkModel>) {
+        binding.rvDrinks.layoutManager = LinearLayoutManager(this)
+
+        // faltaba inicializar el adapter
+        adapter = DrinkAdapter(drinks)
+
         binding.rvDrinks.adapter = adapter
     }
 }

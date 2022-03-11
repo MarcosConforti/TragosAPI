@@ -11,16 +11,17 @@ import javax.inject.Inject
 
 @HiltViewModel
 class DrinkViewModel @Inject constructor(
-    private val getDrinksUseCase:GetDrinksUseCase) :ViewModel() {
+    private val getDrinksUseCase: GetDrinksUseCase
+): ViewModel() {
 
-    val drinkModel = MutableLiveData<DrinkModel>()
+    val drinkLiveData = MutableLiveData<List<DrinkModel>>()
 
-    fun callUseCase(){
+    fun callUseCase() {
       viewModelScope.launch {
           val result = getDrinksUseCase()
           if (!result.isNullOrEmpty()){
-              //result0 = devolver el primer trago
-            drinkModel.postValue(result[0])
+              // devuelve todos los tragos
+              drinkLiveData.value = result
           }
       }
     }
