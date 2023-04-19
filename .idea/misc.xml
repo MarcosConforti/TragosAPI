@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/drawable/ic_search.xml" value="0.1275" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/drawable/searchview_background.xml" value="0.1275" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/activity_description.xml" value="0.25" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/activity_main.xml" value="0.134765625" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/item_grid_drink.xml" value="0.1796875" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/item_list_drink.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/layout/test.xml" value="0.1367419738406659" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/TragosRetrofit/app/src/main/res/menu/search_menu.xml" value="0.1796875" />
       </map>
     </option>
   </component>

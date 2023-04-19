@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TragosRetrofit</string>
+    <string name="drink">Drink</string>
+    <string name="category">Category</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="description">Description</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
+    android:id="@+id/cv"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -16,15 +17,19 @@
         <ImageView
             android:id="@+id/iv_image"
             android:layout_width="150dp"
-            android:layout_height="150dp"/>
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/tv_drink"
-                android:hint="Texto"
+                android:hint="@string/drink"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="24sp"
@@ -32,7 +37,7 @@
                 android:layout_height="50dp"/>
             <TextView
                 android:id="@+id/tv_category"
-                android:hint="Texto"
+                android:hint="@string/category"
                 android:textColor="@color/black"
                 android:textStyle="italic"
                 android:textSize="24sp"
@@ -43,7 +48,7 @@
                 android:id="@+id/tv_alcohol"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Texto"
+                android:hint="@string/alcohol"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="normal" />
